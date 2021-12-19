@@ -1429,6 +1429,9 @@ class BitcoinZ(EquihashMixin, Coin):
     TX_PER_BLOCK = 3
     RPC_PORT = 1979
     REORG_LIMIT = 800
+    PEERS = [
+        'electrum2.btcz.rocks s t'
+        ]    
 
     @classmethod
     def block_header(cls, block, height):
