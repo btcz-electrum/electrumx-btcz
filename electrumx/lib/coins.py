@@ -1430,7 +1430,9 @@ class BitcoinZ(EquihashMixin, Coin):
     RPC_PORT = 1979
     REORG_LIMIT = 800
     PEERS = [
-        'electrum2.btcz.rocks s t'
+        'electrum1.btcz.rocks s t',
+        'electrum2.btcz.rocks s t',
+        'electrum3.btcz.rocks s t'
         ]    
 
     @classmethod
