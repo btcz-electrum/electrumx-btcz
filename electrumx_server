@@ -12,6 +12,7 @@
 import asyncio
 import logging
 import sys
+import os, time
 
 from electrumx import Controller, Env
 from electrumx.lib.util import CompactFormatter, make_logger
@@ -38,6 +39,9 @@ def main():
     else:
         logger.info('ElectrumX server terminated normally')
 
+while os.path.exists('/data/service'):
+    time.sleep(10)
+        
 
 if __name__ == '__main__':
     main()
